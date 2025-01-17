@@ -1,0 +1,8 @@
+BROKER_NAME_LABEL = "//a[contains(@href, '/en/broker/')]/h6"
+FOOTER_SECTION = "//footer"
+NAME_SEARCH_FIELD = "//input[@id='broker-keyword']"
+EXPAND_BROKER_DETAILS_BUTTON = "//button[@type='button' and text()='Details']//*[@data-testid='ExpandMoreIcon']"
+BROKER_ADDRESS_LABEL = "//span[contains(text(), 'Sofia /')]"
+BROKER_LANDLINE_PHONE_LABEL = "//*[contains(@class, 'MuiGrid-root') and contains(@class, 'MuiGrid-item')]//a[contains(@href, 'tel:+359 2')]"
+BROKER_MOBILE_PHONE_LABEL = "//*[contains(@class, 'MuiGrid-root') and contains(@class, 'MuiGrid-item')]//a[contains(@href, 'tel:+359 8')]"
+BROKER_ASSIGNED_PROPERTIES_LABEL = "//a[contains(@href, '/en/broker/') and contains(., 'properties')]"
