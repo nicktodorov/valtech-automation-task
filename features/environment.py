@@ -8,7 +8,6 @@ SCREENSHOTS_DIR = os.path.join(os.getcwd(), "screenshots")
 
 
 def before_all(context):
-    print(f'!!! {context.config.userdata['ui_run']}')
     common_variables.ui_run = context.config.userdata.get("ui_run", "true").lower() == "true"
     if common_variables.ui_run:
         print(f"Starting UI run...")
