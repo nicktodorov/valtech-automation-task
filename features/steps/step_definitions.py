@@ -7,11 +7,11 @@ from pages import (
 )
 
 
-@step('user is on the "{page}" page')
-def user_is_on_brokers_page(context, page):
-    if not hasattr(common_variables, f'{page}_page'):
-        raise Exception(f"The page '{page}' is not defined in common_variables!")
-    url = getattr(common_variables, f'{page}_page')
+@step('user is on the "{section}" page')
+def user_is_on_brokers_page(context, section):
+    if not hasattr(common_variables, f'{section}_page'):
+        raise Exception(f"The page '{section}' is not defined in common_variables!")
+    url = getattr(common_variables, f'{section}_page')
     page = BasePage(context)
     page.navigate_to_url(url)
 
